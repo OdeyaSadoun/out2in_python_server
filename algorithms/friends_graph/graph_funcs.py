@@ -13,8 +13,8 @@ def make_directed_graph_for_connections_between_students(friends_list):
             g.add_edge(student["student"], friend)
 
     # הדפסת הגרף בתצוגה ויזואלית
-    nx.draw(g, with_labels=True)
-    plt.show()
+    # nx.draw(g, with_labels=True)
+    # plt.show()
     return g
 
 
@@ -94,7 +94,6 @@ def calc_social_index_students(friends_list):
             if node == key:
                 d_statistic[node] = mark
      
+
     print(d_statistic)
     return d_statistic
-
-
