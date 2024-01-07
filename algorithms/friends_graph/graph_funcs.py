@@ -60,7 +60,6 @@ def statistic(vertex, g, degrees_in, degrees_out):
 
 def scanGraph(g):
     d = {}
-    print(list(g))
     for node in list(g):
         d[node] = (in_degree(g, node), out_degree(g, node))
         # print(node, in_degree2(g,node),out_degree(g,node))
@@ -76,12 +75,10 @@ def create_degrees(d):
 
 
 def calc_social_index_students(friends_list):
-    print("enter py func")
     friends_array = np.array(friends_list)
     g = make_directed_graph_for_connections_between_students(friends_array)
 
     d = scanGraph(g)
-    print("d", d)
     degrees_in, degrees_out = create_degrees(d)
 
     print(degrees_in, degrees_out)
