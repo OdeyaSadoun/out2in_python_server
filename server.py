@@ -24,7 +24,6 @@ def calculate_social_index_route():
 
     # Assuming this function exists and works correctly
     survey_answers = calc_social_index_students(data['friends_list'])
-    print("///////////survey_answers",survey_answers)
 
     # Assuming this function exists and works correctly
     student_scores = calc_social_index_algorithm(dict_important_messages, dict_attendance, dict_grades, survey_answers)
