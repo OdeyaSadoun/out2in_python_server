@@ -3,5 +3,4 @@ matplotlib
 networkx
 numpy
 requests
-CORS
-jsonify
+flask_cors
