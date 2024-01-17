@@ -31,4 +31,4 @@ def calculate_social_index_route():
     return jsonify(student_scores)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=3002, ssl_context='adhoc',debug=True)
+    app.run(debug=True)
