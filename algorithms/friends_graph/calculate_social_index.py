@@ -2,7 +2,7 @@ def calculate_social_index(dict_attendance, dict_grades, dict_important_messages
     social_index = {}
 
     for student_id in set(dict_attendance.keys()) | set(dict_grades.keys()) | set(dict_important_messages.keys()):
-        attendance_value = 0.2 if dict_attendance.get(student_id, False) else 0
+        attendance_value = 0.2 if dict_attendance.get(student_id, True) else 0
         grades_value = 0.2 if dict_grades.get(student_id, False) else 0
         messages_value = 0.1 if dict_important_messages.get(student_id, False) else 0
         survey_value = survey_answers.get(student_id, 0) * 0.5
